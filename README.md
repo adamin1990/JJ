@@ -7,6 +7,14 @@ I'M REALLY HAHHY TO DEVELOP THIS APPLICATION.
 2. SQUARE'S [PICASSO](https://github.com/square/picasso);
 3. [JSOUP](http://jsoup.org/) FOR PARSING. ETC.
 
+##技术点
+
+* Material Design设计风格，透明状态栏 
+* RecycerView 代替ListView 
+* CardView 
+* JSON数据解析  
+* jsoup 抓取网页内容 
+* Vparser 抓取视频地址 etc.
 
 ##SCREEN SHOT 
 
