@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="1_quickreturnlibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/quickreturnlibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

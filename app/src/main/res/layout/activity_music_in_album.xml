@@ -1,0 +1,56 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-atuo"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    card:cardBackgroundColor="#f1f8e9"
+    card:cardCornerRadius="5dp"
+    >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context=".MainActivity">
+
+<lt.jsj.qust.jjlin.views.ObservableScrollView
+    android:id="@+id/scrollview"
+    android:text="@string/hello_world"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_default_cover" />
+
+     <ListView
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+         android:id="@+id/list_items"></ListView>
+    </LinearLayout>
+
+</lt.jsj.qust.jjlin.views.ObservableScrollView>
+
+<android.support.v7.widget.Toolbar
+android:id="@+id/mtoolbar"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:layout_gravity="top"
+android:minHeight="?attr/actionBarSize"
+android:background="?attr/colorPrimary"
+app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </FrameLayout>
+    </android.support.v7.widget.CardView>

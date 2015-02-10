@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "lt.jsj.qust.jjlin"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.hannesdorfmann:swipeback:1.0.0'
+    compile files('D:/androidstudioproject/JJLin/libs/jsoup-1.8.1.jar')
+    compile files('D:/androidstudioproject/JJLin/libs/systembartint-1.0.4.jar')
+    compile files('D:/androidstudioproject/JJLin/libs/VParser.jar')
+    compile files('D:/androidstudioproject/JJLin/libs/quickreturnlibrary.jar')
+    compile 'com.github.manuelpeinado.fadingactionbar:fadingactionbar:3.1.2'
+    compile 'com.squareup:otto:1.3.5'
+    compile files('D:/androidproj/JJLin(1)/JJLin/libs/jsoup-1.8.1.jar')
+    compile files('D:/androidproj/JJLin(1)/JJLin/libs/quickreturnlibrary.jar')
+    compile files('D:/androidproj/JJLin(1)/JJLin/libs/systembartint-1.0.4.jar')
+    compile files('D:/androidproj/JJLin(1)/JJLin/libs/VParser.jar')
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+}

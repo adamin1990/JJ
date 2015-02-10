@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lt.jsj.qust.jjlin" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.APP"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RealMainActivity2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".RealMainActivity" -->
+        <!-- android:label="@string/title_activity_real_main" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".RealMainActivity"
+            android:label="title_activity_real_main_activity" >
+        </activity>
+        <activity
+            android:name=".AlbumActivity"
+            android:label="@string/title_activity_album" >
+        </activity>
+        <activity
+            android:name=".MusicInAlbumActivity"
+            android:label="@string/title_activity_music_in_album" >
+        </activity>
+        <activity
+            android:name=".ActivityMusicPlayer"
+            android:label="@string/title_activity_activity_music_player"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".RealMainActivity2" >
+        </activity>
+
+        <service
+            android:name=".services.MusicPlaybackService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".ImageDetail"
+            android:label="@string/title_activity_image_detail" >
+        </activity>
+        <activity
+            android:name=".YmtDetail"
+            android:label="@string/title_activity_ymt_detail" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-atuo"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    card:cardBackgroundColor="#f1f8e9"
+    card:cardCornerRadius="5dp"
+    >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="lt.jsj.qust.jjlin.AlbumActivity" tools:ignore="MergeRootFrame" />
+    </android.support.v7.widget.CardView>
